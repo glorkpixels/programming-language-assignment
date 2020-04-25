@@ -1,11 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Course {
 	private String courseName;
 	private String courseCode;
 	private String courseDesc;
 	private String courseTeacher;
+	static List<String> assignmentList = new ArrayList<String>();
+	static List<String> studentList = new ArrayList<String>();
+	static List<String> announcementList = new ArrayList<String>();
+	
+	
 	public Course(String courseName, String courseCode, String courseDesc, String courseTeacher) {
-		super();
 		this.courseName = courseName;
 		this.courseCode = courseCode;
 		this.courseDesc = courseDesc;
